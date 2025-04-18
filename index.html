@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="Light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COMPANYNAME</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/menu-style.css">
+
+  <link rel="stylesheet" href="css/vid.css" />
+  <script src="https://kit.fontawesome.com/40f87815f3.js" crossorigin="anonymous"></script>
+
+  <!--<style>
+      .banner-image {
+        background-image: url('img/banner-img.jpg');
+        background-size: cover;
+      }
+    </style>-->
+
+  <style>
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .icon-container {
+      text-align: center;
+    }
+
+    .icon-container i {
+      font-size: 50px;
+      color: #ffffff;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .partnerobj {
+      aspect-ratio: 5 / 3;
+    }
+
+    .svcimg {
+      object-fit: cover;
+      /* Ensures the image covers the area */
+      object-position: center;
+      /* Keeps the image centered */
+    }
+
+    .overlay-div {
+            height: 30%;
+            width: 100%;
+            position: absolute;
+            background-color: #000;
+            opacity: .5;
+            padding: 5px
+        }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 225px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Ensures the image covers the container without distortion */
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black background with 40% opacity */
+      z-index: 1;
+      /* Ensure the overlay is above the image, but behind the text */
+    }
+
+    .centered-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #eceeef;
+      font-size: 20px;
+      text-align: center;
+      z-index: 2;
+      /* Ensure the text is on top of the overlay */
+    }
+    .parallax {
+            background-image: url('./img/citytop.jpg');
+            /* Your background image */
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Contact Form Style */
+        .contact-form {
+            background: rgba(15, 96, 160, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-section {
+            padding: 50px 0;
+        }
+  </style>
+
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/swoosh.svg" width="100" height="40" alt="" id="mylogo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#Solutions">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#Industries">Industries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#Partners">Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Image 
+    <div
+     class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+      <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
+        <source class="h-100" src="img/1570919-hd_1920_1080_30fps.mp4" type="video/mp4" />
+      </video>
+      <div class="content text-center">
+        <h1 class="text-white">WEB ZONE</h1>
+      </div>
+    </div>
+ -->
+  <div class="video-background-holder">
+    <div class="video-background-overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="img/1570919-hd_1920_1080_30fps.mp4" type="video/mp4" />
+    </video>
+
+
+    <div class="video-background-content container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-4">COMPANYNAME</h1>
+          <p class="lead mb-0">Empowering your Business with Smart, Scalable Technology Solutions</p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End -->
+
+  <!-- Main Content Area -->
+  <section class="py-5" style="height: 100vh;" id="about">
+    <div class="container">
+      <div class="row align-items-center gx-4">
+        <!-- Heading -->
+        <div class="col-md-12 text-center">
+          <h2  class="display-5 fw-bold">About Us</h2>
+          <p>COMPANYNAME is a Global Information Technology Provider Established in 1992.</p>
+        </div>
+      </div>
+      <div class="row align-items-center gx-4">
+        <div class="col-md-5">
+          <div class="ms-md-2 ms-lg-5"><img class="img-fluid rounded-3" src="img/team.jpg"></div>
+        </div>
+        <div class="col-md-6 offset-md-1">
+          <div class="ms-md-2 ms-lg-5">
+            <span class="text-muted">Our Story</span>
+            <p class="lead fw-bold">Our goal is to partner with our clients to provide comprehensive technology
+              products, solutions and services to drive their business goals.</p>
+            <p class="lead mb-0">We leverage strong leadership, refined methodologies, talented team members, strategic
+              vendor partnerships and industry knowledge to provide our clients with highly effective solutions at
+              competitive pricing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center gx-4">
+        <!-- Heading -->
+        <div class="col-md-5 ms-md-2 ms-lg-5">
+          <p>&#x2022; Company Overview</p>
+          <p>&#x2022; Company Address</p>
+          <p>&#x2022; Leadership Team</p>
+          <p>&#x2022; Mission, Vision, and Values</p>
+          <p>&#x2022; Careers</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Main Content Area -->
+
+
+  <section class="py-5" style="height: 100vh; background-color: rgba(15,96,160);" id="Solutions">
+    <div class="container text-white">
+      <div class="row align-items-center gx-4">
+        <!-- Heading -->
+        <div class="col-md-12 text-center">
+          <h2 class="display-5 fw-bold">Solutions</h2>
+          <p>Technology Solutions Help Drive Your Business</p>
+        </div>
+      </div>
+
+
+      <div class="container my-5">
+        <div class="row">
+          <!-- First Row of Icons -->
+          <div class="col-md-3">
+            <div class="icon-container">
+              <i class="fas fa-camera"></i>
+              <h2 class="fw-normal ">Audio and Video</h2>
+              <p class="d-flex justify-content-center">Some representative placeholder content for the three columns of
+                text below the carousel. This is the first column.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-container">
+              <i class="fas fa-bolt"></i>
+              <h2 class="fw-normal">Cloud</h2>
+              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
+                column.</p>
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-container">
+              <i class="fas fa-laptop"></i>
+              <h2 class="fw-normal">Custom Computing Solutions</h2>
+              <p>And lastly this, (Keith’s Sections).</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-container">
+              <i class="fas fa-tree"></i>
+              <h2 class="fw-normal">Cyber Security</h2>
+              <p>And lastly this, the third column of representative placeholder content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <!-- Second Row of Icons -->
+          <div class="col-md-3">
+            <div class="icon-container">
+              <i class="fas fa-plane"></i>
+              <h2 class="fw-normal">Data Centers</h2>
+              <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                first column.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-container">
+              <i class="fas fa-heart"></i>
+              <h2 class="fw-normal">Digital Workspace</h2>
+              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
+                column.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-container">
+              <i class="fas fa-music"></i>
+              <h2 class="fw-normal">Networking</h2>
+              <p>And lastly this, the third column of representative placeholder content.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-container">
+              <i class="fas fa-paint-brush"></i>
+              <h2 class="fw-normal">Emerging Technologies</h2>
+              <p>And lastly this, the third column of representative placeholder content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Services Section -->
+
+  <section class="py-5" style="height: 100vh; background-color: rgba(221,221,221);" id="Services">
+    <div class="container">
+      <div class="row align-items-center gx-4">
+        <!-- Heading -->
+        <div class="col-md-12 text-center">
+          <h2 class="display-5 fw-bold">Services</h2>
+          <p>Technology Solutions Help Drive Your Business</p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <!-- Carousel -->
+      <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+          <!-- First carousel item (set to 'active' to show first) -->
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+              <!-- Card 1 -->
+              <div class="col-md-3">
+                <div class="card shadow-sm">
+                  <div class="image-container" style="position: relative; width: 100%; height: 225px;">
+                    <img src="/img/team.jpg" class="bd-placeholder-img card-img-top svcimg" width="100%" height="225"
+                      alt="Global Technology Procurement">
+                    <div class="overlay"></div>
+                    <div class="centered-text">Solutions Design</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-md-3">
+                <div class="card shadow-sm">
+                  <div class="image-container" style="position: relative; width: 100%; height: 225px;">
+                    <img src="/img/Procurement.jpg" class="bd-placeholder-img card-img-top svcimg" width="100%"
+                      height="225" alt="Global Technology Procurement">
+                    <div class="overlay"></div>
+                    <div class="centered-text">Global Technology Procurement</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-3">
+                <div class="card shadow-sm">
+                  <div class="image-container" style="position: relative; width: 100%; height: 225px;">
+                    <img src="/img/Logistics.jpg" class="bd-placeholder-img card-img-top svcimg" width="100%"
+                      height="225" alt="Global Technology Procurement">
+                    <div class="overlay"></div>
+                    <div class="centered-text">Logistics Management</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-3">
+                <div class="card shadow-sm">
+                  <div class="image-container" style="position: relative; width: 100%; height: 225px;">
+                    <img src="/img/Vendor.jpg" class="bd-placeholder-img card-img-top svcimg" width="100%" height="225"
+                      alt="Global Technology Procurement">
+                    <div class="overlay"></div>
+                    <div class="centered-text">Vendor Negotiation</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second carousel item -->
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+              <!-- Card 4 -->
+              <div class="col-md-3">
+                <div class="card shadow-sm">
+                  <div class="image-container" style="position: relative; width: 100%; height: 225px;">
+                    <img src="/img/Implement.jpg" class="bd-placeholder-img card-img-top svcimg" width="100%"
+                      height="225" alt="Global Technology Procurement">
+                    <div class="overlay"></div>
+                    <div class="centered-text">Implementation</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="col-md-3">
+                <div class="card shadow-sm">
+                  <div class="image-container" style="position: relative; width: 100%; height: 225px;">
+                    <img src="/img/planning.jpg" class="bd-placeholder-img card-img-top svcimg" width="100%"
+                      height="225" alt="Global Technology Procurement">
+                    <div class="overlay"></div>
+                    <div class="centered-text">Strategic Planning</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="col-md-3">
+                <div class="card shadow-sm">
+                  <div class="image-container" style="position: relative; width: 100%; height: 225px;">
+                    <img src="/img/staffaug.jpg" class="bd-placeholder-img card-img-top svcimg" width="100%"
+                      height="225" alt="Global Technology Procurement">
+                    <div class="overlay"></div>
+                    <div class="centered-text">Staff Augmentation</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="col-md-3">
+                <div class="card shadow-sm">
+                  <div class="image-container" style="position: relative; width: 100%; height: 225px;">
+                    <img src="/img/ecycle.jpg" class="bd-placeholder-img card-img-top svcimg" width="100%" height="225"
+                      alt="Global Technology Procurement">
+                    <div class="overlay"></div>
+                    <div class="centered-text">Electronic Waste Recycling</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="py-5" style="height: 100vh;" id="Industries">
+    <div class="container">
+      <center>
+          <h1>Industries</h1>
+          <div class="row text-center">
+              <div class="col-md-4 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="img/media.jpg">
+                      <div class="overlay-div"></div>
+                      <div class="card-img-overlay card-inverse">
+                          <h4 class="text-stroke text-white pb-5">
+                              Media and Entertainment
+                          </h4>
+
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="img/health.jpg">
+                      <div class="overlay-div"></div>
+                      <div class="card-img-overlay card-inverse">
+                          <h4 class="text-stroke text-white pb-5">
+                              Healthcare
+                          </h4>
+
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="img/public.jpg">
+                      <div class="overlay-div"></div>
+                      <div class="card-img-overlay card-inverse">
+                          <h4 class="text-stroke text-white pb-5">
+                              Public Sector
+                          </h4>
+
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+          <div class="row text-center">
+              <div class="col-md-4 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="img/Retail.jpg">
+                      <div class="overlay-div"></div>
+                      <div class="card-img-overlay card-inverse">
+                          <h4 class="text-stroke text-white pb-5">
+                              Retail
+                          </h4>
+
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="img/Legal.jpg">
+                      <div class="overlay-div"></div>
+                      <div class="card-img-overlay card-inverse">
+                          <h4 class="text-stroke text-white pb-5">
+                              Legal
+                          </h4>
+
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="img/finance.jpg">
+                      <div class="overlay-div"></div>
+                      <div class="card-img-overlay card-inverse">
+                          <h4 class="text-stroke text-white pb-5">
+                              Financial Services
+                          </h4>
+
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </center>
+  </div>
+  </section>
+
+  <!-- Parnters -->
+<section class="py-5" style="height: 100vh; background-color:  rgba(221,221,221);" id="Partners">
+
+<div class="container">
+  <div class="row align-items-center gx-4">
+    <!-- Heading -->
+    <div class="col-md-12 text-center">
+      <h2 class="display-5 fw-bold">Partners</h2>
+      <p>Some of our trusted technology partners</p>
+    </div>
+  </div>
+</div>
+
+  <div class="container overflow-hidden">
+    <div class="row gy-4" >
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center partnerobj">
+        <img class="img-fluid rounded-3" src="img/intel.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center partnerobj">
+        <img class="img-fluid  rounded-3" src="img/HPE-300x150-1.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center partnerobj">
+        <img class="img-fluid rounded-3" src="img/cisco.webp">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center partnerobj">
+        <img class="img-fluid rounded-3" src="img/Pure-storage-vector-logo.svg.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center partnerobj">
+        <img class="img-fluid rounded-3" src="img/Dell_Technologies_logo.svg.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center">
+        <img class="img-fluid rounded-3" src="img/VMware-by-Broadcom-Logo-color.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center">
+        <img class="img-fluid rounded-3" src="img/nutanix-pn.png.webp">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center">
+        <img class="img-fluid rounded-3" src="img/Commvault_Logo_RGB_R_Croc.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center">
+        <img class="img-fluid rounded-3 object-fit-cover" src="img/Microsoft_logo.svg.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center">
+        <img class="img-fluid rounded-3" src="img/Fortinet_logo.svg.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center">
+        <img class="img-fluid rounded-3" src="img/AmazonWebservices_Logo.svg.png">
+      </div>
+      <div class="col-6 col-md-4 col-xl-3  d-flex align-items-center justify-content-center">
+        <img class="img-fluid rounded-3" src="img/PaloAltoNetworks_2020_Logo.svg.png">
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Parallax Section with Contact Form -->
+        <section class="parallax" id="Contact">
+          <div class="container form-section">
+              <div class="row  h-100">
+  
+                  <div class="col-md-8 col-lg-12 contact-form">
+  
+                      <div class="row ">
+                          <div class="col-md-8 col-lg-6" >
+                              
+                                  <div class="col-11 col-xl-10">
+                                      <div class="contact-info-wrapper py-4 py-xl-4">
+                                          <h2 class="h1 mb-3 text-light">Contact Us</h2>
+                                          <p class="lead fs-4 text-light opacity-75 mb-4 mb-xxl-5">We're always on the
+                                              lookout to work with new clients. If you're interested in working with us,
+                                              please get in touch in one of the following ways.</p>
+                                          <div class="d-flex mb-4 mb-xxl-5">
+                                              <div class="me-4 text-primary">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                      fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                                                      <path fill-rule="evenodd"
+                                                          d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                                                  </svg>
+                                              </div>
+                                              <div>
+                                                  <h4 class="mb-3 text-light">Address</h4>
+                                                  <address class="mb-0 text-light opacity-75">30 Oser Ave,
+                                                      Hauppauge, New York, 11788</address>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-4 mb-xxl-5">
+                                              <div class="col-12 col-xxl-6">
+                                                  <div class="d-flex mb-4 mb-xxl-0">
+                                                      <div class="me-4 text-primary">
+                                                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                              fill="currentColor" class="bi bi-telephone-outbound"
+                                                              viewBox="0 0 16 16">
+                                                              <path
+                                                                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                                                          </svg>
+                                                      </div>
+                                                      <div>
+                                                          <h4 class="mb-3 text-light">Phone</h4>
+                                                          <p class="mb-0">
+                                                              <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                                                                  href="tel:+15057922430">(631) 630-0600</a>
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-12 col-xxl-6">
+                                                  <div class="d-flex mb-0">
+                                                      <div class="me-4 text-primary">
+                                                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                              fill="currentColor" class="bi bi-envelope-at"
+                                                              viewBox="0 0 16 16">
+                                                              <path
+                                                                  d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                                                              <path
+                                                                  d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                                                          </svg>
+                                                      </div>
+                                                      <div>
+                                                          <h4 class="mb-3 text-light">E-Mail</h4>
+                                                          <p class="mb-0">
+                                                              <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
+                                                                  href="mailto:demo@yourdomain.com">sales@COMPANYNAME.com</a>
+                                                          </p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+  
+                              <div class="col-md-8 col-lg-6 contact-form text-light">
+                                  <h2 class="text-center mb-4">Request Call Back</h2>
+                                  <form action="#" method="POST">
+                                      <div class="mb-3">
+                                          <label for="name" class="form-label">Full Name</label>
+                                          <input type="text" class="form-control" id="name" name="name" required>
+                                      </div>
+                                      <div class="mb-3">
+                                          <label for="email" class="form-label">Email Address</label>
+                                          <input type="email" class="form-control" id="email" name="email" required>
+                                      </div>
+                                      <div class="mb-3">
+                                          <label for="message" class="form-label">Your Message</label>
+                                          <textarea class="form-control" id="message" name="message" rows="5"
+                                              required></textarea>
+                                      </div>
+                                      <div class="text-center">
+                                          <button type="submit" class="btn btn-primary">Send Message</button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      </section>
+
+  
+
+
+  <!-- Footer section -->
+
+  <section style="background-color: rgba(15,96,160);" class="myfooter text-white">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+          </symbol>
+          <symbol id="facebook" viewBox="0 0 16 16">
+            <path fill="#ffffff"
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+          </symbol>
+          <symbol id="instagram" viewBox="0 0 16 16">
+            <path fill="#ffffff"
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+          </symbol>
+          <symbol id="twitter" viewBox="0 0 16 16">
+            <path fill="#ffffff"
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </symbol>
+        </svg>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2024 COMPANYNAME Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="32" height="24">
+                  <use xlink:href="#twitter" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook" />
+                </svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script>
+    window.onload = function() {
+        // Create an XMLHttpRequest to load the floating menu content
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'floating-menu.html', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Insert the menu content into the body
+                var menuDiv = document.createElement('div');
+                menuDiv.innerHTML = xhr.responseText;
+                document.body.appendChild(menuDiv);
+            }
+        };
+        xhr.send();
+    };
+</script>
+
+
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > window.innerHeight - 100) {
+        nav.classList.add('bg-dark', 'shadow');
+        document.getElementById("mylogo").src = "img/swoosh-white.svg";
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+        document.getElementById("logo").src = "img/swoosh.svg";
+      }
+    });
+  </script>
+</body>
+
+</html>
